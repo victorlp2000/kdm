@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="xiyan">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+    <string-array name="yundongliang">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+    <string-array name="zhuanke">
+        <item>心血管专家</item>
+        <item>神经科专家</item>
+        <item>外科专家</item>
+        <item>中药</item>
+    </string-array>
+</resources>

@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wel.kangmeida.activity.XZActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/yundongxiangqing"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_yundong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/yundongs" />
+
+        <TextView
+            android:id="@+id/tv_yundong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/iv_yundong"
+            android:text="@string/yundong"
+            android:textSize="16sp"
+            android:textColor="#595959" />
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="66dp"
+    android:background="@mipmap/bushuxianshikuang"
+    android:layout_gravity="center"
+    >
+<TextView
+    android:id="@+id/tv_zongbushu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2000"
+    android:layout_centerInParent="true"
+    android:textColor="#15cbbd"
+    android:textSize="50sp"
+    />
+    <TextView
+        android:id="@+id/tv_zongbushus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zongbushu"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#15cbbd"
+        android:textSize="16sp"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="56dp"
+    >
+    <TextView
+        android:id="@+id/tv_huxilv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/huxilv"
+        android:textSize="18sp"
+        android:textColor="#595959"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_huxilv"
+        android:src="@mipmap/huxilv"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>
+
+</LinearLayout>

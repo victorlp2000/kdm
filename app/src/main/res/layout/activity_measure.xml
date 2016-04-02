@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/xuanzechengyuan"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_celiang_xuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/iv_fangke"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"
+            android:text="@string/xuanzechengyuan"
+            android:textColor="#595959"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_fangke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_celiang_xuanze"
+            android:layout_toLeftOf="@+id/iv_fangke"
+            android:layout_toStartOf="@+id/iv_fangke"
+            android:padding="8dp"
+            android:text="@string/fanke"
+            android:textColor="#595959"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_fangke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:padding="1dp"
+            android:src="@mipmap/kai" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_celiang_xuanze"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_chengyuan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@null" />
+</LinearLayout>

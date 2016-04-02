@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/xyHistoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBar_height_dimen"
+        android:background="@color/titleBar_bg_color"
+        android:gravity="center_vertical" >
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xyHistoryTitle"
+                android:textColor="@color/titleBar_textColor_color"
+                android:textSize="@dimen/titleBar_text_size_dimen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xyHistoryScatterChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="bottom|center_horizontal" >
+
+        <LinearLayout
+            android:id="@+id/period_week_layout"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/period_week_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/period_week"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/period_month_layout"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/period_month_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/period_month"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/period_year_layout"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/period_year_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/period_year"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selected_sharp_bg2"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/tongJiEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pedometerTimeLabel"
+                android:textColor="#23ac38" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xyHistoryMultiLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

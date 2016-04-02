@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:src="@mipmap/touxiang_cehua" />
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_title"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp"
+            android:text="@string/shouyetitle"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_item_fenxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:src="@mipmap/iconfont_fenxiang" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/iv_item_title"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/main_rgs"
+            layout="@layout/widget_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>

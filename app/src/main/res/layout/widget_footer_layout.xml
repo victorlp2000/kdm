@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RadioGroup
+        android:id="@+id/rgs_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rbt_day"
+            style="@style/Widget.UpRbStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rg_thime_selecotr"
+            android:text="@string/rbt_day" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#03cccf" />
+
+        <RadioButton
+            android:id="@+id/rbt_week"
+            style="@style/Widget.UpRbStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rg_thime_selecotr"
+            android:text="@string/rbt_week" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#03cccf" />
+
+        <RadioButton
+            android:id="@+id/rbt_month"
+            style="@style/Widget.UpRbStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rg_thime_selecotr"
+            android:text="@string/rbt_month" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#03cccf" />
+
+        <RadioButton
+            android:id="@+id/rbt_year"
+            style="@style/Widget.UpRbStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rg_thime_selecotr"
+            android:text="@string/rbt_year" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgs_time"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/jiankangzhuangkuang" />
+
+    <ImageView
+        android:id="@+id/iv_state_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_state"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/state3" />
+
+    <LinearLayout
+        android:id="@+id/rl_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_state_details"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_state_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/xinzang" />
+
+        <ImageView
+            android:id="@+id/iv_state_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/shuimian" />
+
+        <ImageView
+            android:id="@+id/iv_state_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/yundong" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zhankai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_state_details"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/state2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_state_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_state"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitEnd"
+        android:src="@mipmap/state5" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_shape"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#00000000"
+            android:text="@string/querenkaiqi"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="#00000000"
+            android:text="@string/dialog"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+           android:layout_alignParentBottom="true"
+            android:background="@color/gainsboro" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rl_title"
+        android:orientation="horizontal"
+        android:background="#88ffffff"
+        >
+
+        <TextView
+            android:id="@+id/tv_fon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/fo"
+            android:background="#00000000"
+            android:textColor="#1571f9"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gainsboro" />
+
+        <TextView
+            android:id="@+id/tv_shi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/shi"
+            android:textColor="#1571f9"
+            android:textSize="16sp"
+            android:background="#00000000"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

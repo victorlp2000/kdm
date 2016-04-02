@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/guangyuwomen"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/logo_guangyuwomen" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yijiangfankui"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_yijianfankui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:src="@mipmap/yijianfakui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/iv_yijianfankui"
+            android:text="@string/yijian"
+            android:textColor="#595959"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_jiachagengxin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_jiachagengxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            android:src="@mipmap/gengxin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/iv_jiachagengxin"
+            android:text="@string/jiancha"
+            android:textColor="#595959"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_gengxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:src="@mipmap/zhankai_shezhiye" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_gengxin"
+            android:text="当前版本: v1.0.0"
+            android:textColor="#595959"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:text="由微尔联提供技术支持"
+            android:textColor="#333333"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:text="Copyright @ 2015 Zxc Co.,Ltd.All Rights Reserved"
+            android:textColor="#333333"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+</LinearLayout>

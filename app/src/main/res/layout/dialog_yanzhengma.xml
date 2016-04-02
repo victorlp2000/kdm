@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_shape"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/tv_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="18dp"
+        android:layout_marginTop="6dp"
+        android:background="#00000000"
+        android:text="功能尚未开放,敬请期待!"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tv_dialog_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:id="@+id/rl_queren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:background="@color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="18dp"
+            android:background="@color/transparent"
+            android:text="@string/queren"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

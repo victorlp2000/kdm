@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/wc1"
+        android:id="@+id/iv_welcome_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_tiaoguo"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:text="跳过>>"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_welcome_container"
+        android:visibility="visible"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_welcome_register"
+            android:layout_margin="10dp"
+            android:text="新用户注册"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" />
+        <Button
+            android:id="@+id/btn_welcome_login"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="登    入"
+            android:textStyle="bold"
+            android:background="#00bfff"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

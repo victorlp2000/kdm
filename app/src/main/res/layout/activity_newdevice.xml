@@ -1,0 +1,348 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_jiatingliebiao_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_fanhui"
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:id="@+id/iv_fanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fanhui_hei" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rl_fanhui"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="添加设备"
+                android:textColor="#595959"
+                android:textSize="16sp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rl_fanhui"
+                android:layout_marginTop="18dp"
+                android:background="@color/gainsboro" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tw"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_tiwen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/tiwenji"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_twjiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tiwen"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_twjiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_twjiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/tiwen"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_tw"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/tiwenji" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xy"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="26dp"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/tv_xyshebeiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/xueyaji"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_xyjiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_xyshebeiname"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_xyjiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_xyjiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/xueya"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_xyshebei"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/xueyaji" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tz"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="26dp"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/tv_tzshebeiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/tizhongji"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tzjiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tzshebeiname"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_tzjiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tzjiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/tizhong"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_tzjiance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tzjiance1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/zhifang"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_tzshebei"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/zhinengdiantu" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="26dp"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/tv_shebeiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/shebeiname"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_shebeiname"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/jiance1"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jiance1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/jiance2"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_shebei"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/shoubiao" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="26dp"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/tv_sm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="睡眠跟踪器"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_sm_jiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sm"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_sm_jiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sm_jiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="－血压"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_sm"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/shuimiangenzongqi" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

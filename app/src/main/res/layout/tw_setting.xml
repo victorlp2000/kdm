@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/userSettingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBar_height_dimen"
+        android:layout_alignParentTop="true"
+        android:background="@color/titleBar_bg_color"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/settings"
+            android:textColor="@color/titleBar_textColor_color"
+            android:textSize="@dimen/titleBar_text_size_dimen" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/userSettingTWUnitBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/userSettingTitle"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/userTWUnitLabel"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/userTWUnitGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/register_label_type"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/userTWCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"></RadioButton>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cc" />
+
+            <RadioButton
+                android:id="@+id/userTWFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ff" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userSettingTWUnitBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="saveUserSetting"
+        android:text="@string/button_save" />
+
+</RelativeLayout>

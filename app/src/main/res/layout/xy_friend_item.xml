@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paimin_item_bg"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/xyFriendUserImage"
+        android:layout_width="@dimen/item_image_size_dimen"
+        android:layout_height="@dimen/item_image_size_dimen"
+        android:contentDescription="@string/menu_user_avatar"
+        android:src="@mipmap/profile_default_avatar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/xyFriendUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_user_name"
+                android:textColor="@color/normal_item_title_color"
+                android:textSize="@dimen/item_title_size_dimen" />
+
+            <TextView
+                android:id="@+id/xyFriendTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/xy_history_time"
+                android:textColor="@color/normal_item_data_color"
+                android:textSize="@dimen/item_data_size_dimen" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/xyFriendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xyHistoryTitle"
+            android:textColor="@color/normal_item_data_color"
+            android:textSize="@dimen/item_data_size_dimen" />
+    </LinearLayout>
+
+</LinearLayout>

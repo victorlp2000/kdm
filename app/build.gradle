@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.wel.kangmeida"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    repositories {
+        // ...
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile project(':SlidingMenulibrary')
+    compile 'com.squareup.okhttp3:okhttp:3.0.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/lefu.jar')
+    compile 'com.github.orhanobut:hawk:1.21'
+    compile 'com.jiechic.library:xUtils:2.6.14'
+}

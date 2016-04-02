@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_yishengliebiao_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="医生资料"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yishengliebiao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/rl_yishengliebiao_title"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_yishengliebiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:padding="8dp"
+            android:text="医生列表"
+            android:textColor="#595959"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_xinzeng"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/rl_yishengliebiao"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rl_xinzeng"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gainsboro" />
+
+        <TextView
+            android:id="@+id/tv_xinzengchengyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新增医生"
+            android:textColor="#00aaff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

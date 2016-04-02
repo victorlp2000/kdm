@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_chengyuanliebiao_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerInParent="true"
+            android:text="@string/hobby"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <GridView
+            android:id="@+id/gv_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="14dp"
+            android:numColumns="4"
+            android:verticalSpacing="14dp">
+
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.wel.kangmeida.activity.XZActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/xztitle"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/iv_xinlv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@mipmap/xinlv"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="14dp"
+    />
+    <TextView
+        android:id="@+id/tv_xinlv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xinlvshuzi"
+        android:layout_toRightOf="@+id/iv_xinlv"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:textColor="#595959"
+        android:textSize="16sp"
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/xyHistoryMultiLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xueyatubiao"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        />
+</LinearLayout>

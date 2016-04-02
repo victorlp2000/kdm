@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBar_height_dimen"
+        android:background="@color/titleBar_bg_color"
+         >
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tz_paimin"
+            android:textColor="@color/titleBar_textColor_color"
+            android:textSize="@dimen/titleBar_text_size_dimen"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <com.wel.kangmeida.ui.YListView
+        android:id="@+id/tzPaiMinList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:divider="#f1f1f1"
+        android:dividerHeight="10dp" >
+    </com.wel.kangmeida.ui.YListView>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f7"
+    android:orientation="vertical"
+    tools:context="com.wel.kangmeida.activity.XZActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:id="@+id/iv_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_fanhui"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="@string/fenxiang"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/rl_fanhui"
+            android:layout_marginTop="18dp"
+            android:background="@color/gainsboro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fenxiang_shape">
+
+        <ImageView
+            android:id="@+id/iv_fenxiangtouxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/touxiang_fenxiang" />
+
+        <TextView
+            android:id="@+id/tv_yonghuming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="32dp"
+            android:layout_toRightOf="@+id/iv_fenxiangtouxiang"
+            android:text="@string/fenxiangyonghu"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_yonghuming"
+            android:layout_below="@+id/tv_yonghuming"
+            android:layout_marginTop="12dp"
+            android:text="@string/jiankangzhuangkuan"
+            android:textColor="#15CBBD"
+            android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_xinlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/xinlv"
+                android:layout_marginLeft="17dp"
+                android:layout_below="@+id/iv_fenxiangtouxiang"
+                android:layout_marginTop="26dp"
+                />
+            <TextView
+                android:id="@+id/tv_xinlv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xinlvshuzi"
+                android:textColor="#595959"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/iv_xinlv"
+                android:layout_below="@+id/iv_fenxiangtouxiang"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="26dp"
+                />
+        <ImageView
+            android:id="@+id/iv_shuimian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/iv_xinlv"
+            android:src="@mipmap/shuimians" />
+
+        <TextView
+            android:id="@+id/tv_shuimian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/tv_xinlv"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@+id/iv_xinlv"
+            android:text="@string/shumianzhaungtai"
+            android:textColor="#595959"
+            android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/iv_yundong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/iv_shuimian"
+            android:src="@mipmap/yundongs" />
+
+        <TextView
+            android:id="@+id/tv_yundong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/iv_yundong"
+            android:text="@string/yundong"
+            android:layout_below="@+id/tv_shuimian"
+            android:textSize="16sp"
+            android:textColor="#595959" />
+        <ImageView
+            android:id="@+id/iv_erweima"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_below="@+id/tv_yundong"
+            android:layout_marginTop="26dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/erweima"
+            android:layout_below="@+id/iv_erweima"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

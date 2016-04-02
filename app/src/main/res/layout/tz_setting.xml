@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/userSettingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleBar_height_dimen"
+        android:layout_alignParentTop="true"
+        android:background="@color/titleBar_bg_color"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+        <RelativeLayout
+            android:id="@+id/rl_fanhui"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/iv_celiang_fanhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/fanhui_hei"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textColor="@color/titleBar_textColor_color"
+                android:textSize="@dimen/titleBar_text_size_dimen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userSettingBirthdayBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/userSettingTitle"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/userBirthday"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/userBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/userBirthday" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/userSettingSexBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/userSettingBirthdayBar"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/userSexLabel"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/userSexGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/register_label_type"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/userSexMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/male" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/userSexFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userSettingBodyHighBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/userSettingSexBar"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:gravity="center_vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/body_high"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/userBodyHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/body_high_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userSettingBodyHighBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="saveUserSetting"
+        android:text="@string/button_save" />
+
+</RelativeLayout>

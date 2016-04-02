@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_jiatingliebiao_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_fanhui"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_fanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/fanhui_hei" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rl_fanhui"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/shebei"
+                android:textColor="#595959"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_tianjia"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/iv_shebei_tianjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="14dp"
+                    android:src="@mipmap/tianjia_1" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/rl_fanhui"
+                android:layout_marginTop="18dp"
+                android:background="@color/gainsboro" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_shebeiname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/shebeiname"
+                android:textColor="#03cccf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_shebeiname"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/jiance"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jiance"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/jiance1"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_jiance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_jiance1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/jiance2"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv_shebei"
+                android:layout_width="145dp"
+                android:layout_height="145dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/shoubiao" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_anzhuang"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="26dp"
+                android:background="@color/gainsboro" />
+
+            <TextView
+                android:id="@+id/tv_anzhuang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:text="@string/anzhuang"
+                android:textColor="#03cccf" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/zhankai_2" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
