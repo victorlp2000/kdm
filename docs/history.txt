@@ -1,2 +1,4 @@
-2016/04/01: meet and get device
-2016/04/04: received UI image file: imgpsh_fullsize.png
+2016/04/01 meet and get device
+2016/04/04 received UI image file: imgpsh_fullsize.png
+2016/04/08 sent new icon images:add-comment, color-code, sympton-icons 每次测量后可以加备注说明身体状况,选择状况图标
+2016/04/11 received 蓝牙血压计通讯协议.doc
