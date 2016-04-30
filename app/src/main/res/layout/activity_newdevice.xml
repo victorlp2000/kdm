@@ -225,6 +225,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/rl_ecg"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:background="@color/white">
