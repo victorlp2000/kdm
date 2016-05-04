@@ -1,4 +1,4 @@
-
+2016/04/29 added onclick action to launch ecg app from kdm
 2016/04/25 look mosquitto configer, try to open webcoket
     Websockets support is currently disabled by default at compile time.
     to enable, need to get source package and compile with
